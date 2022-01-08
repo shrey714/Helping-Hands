@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" stylestyle="scroll-behavior:smooth">
 
@@ -35,7 +36,6 @@
   <!-- Navbar -->
 <header class="header">
         <nav class="navbar">
-            {{!-- <a href="#" class="nav-logo">LOGO</a> --}}
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="/" class="nav-link" id="first">Home</a>
@@ -129,6 +129,7 @@
 
     {{#each userinfo}}
     <form  id="myForm" method="POST" class="{{_id}} formexist" target="uploader_iframe">
+      <input type="text" class="idofaccepter" name="acceptedby" style="display: none;" value="userid" />       
       <div class="hello-item">
         <div class="card">
           <div class="card-content">
@@ -136,6 +137,7 @@
             <h3 class="card-header">Name : {{name}}</h3>
             <h3><a class="locationbtn" href="{{locate}}">Get location : location</a></h3>
             <h3>Gender : {{gender}}</h3>
+            <h3 style="color: red;">Status : {{status}}</h3>
             <h3>Contact Number : {{number}}</h3>
             <h3 class="card-text"> Required Help : {{helptext}}</h3>            
             <input type="text" name="id" style="display: none;" value={{_id}}>
@@ -155,7 +157,8 @@
     {{/each}}
   </div>
     <iframe id="uploader_iframe" name="uploader_iframe" style="display: none;"></iframe>
-  
+    <input type="text" id="takeid" value="{{userid}}" style="display: none;">
+
   <div id="page2" class="hello hello2" data-tab-content>
     {{#each historyuserinfo}}
     <form id="myForm" class="{{_id}} formexist">
@@ -166,8 +169,9 @@
             <h3 class="card-header">Name : {{name}}</h3>
             <h3><a class="locationbtn" href="{{locate}}">Get location : location</a></h3>
             <h3>Gender : {{gender}}</h3>
+            <h3 style="color: red;">Status : {{status}}</h3>
             <h3>Contact Number : {{number}}</h3>
-            <h3 class="card-text"> Required Help : {{helptext}}</h3>            
+            <h3 class="card-text"> Required Help : {{helptext}}</h3>  
           </div>
         </div>
       </div>

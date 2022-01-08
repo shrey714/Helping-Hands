@@ -83,3 +83,9 @@ popbuttons.forEach(popbox=>{
     bodyback.style.overflowY="scroll";
   })
 })
+
+let tekeidof = document.getElementById("takeid").value;
+let allhistory = document.querySelectorAll(".idofaccepter");
+allhistory.forEach((forms) =>{
+  forms.setAttribute("value", tekeidof);
+})

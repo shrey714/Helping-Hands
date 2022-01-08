@@ -1,3 +1,5 @@
+var a = $('.boxesnumber').length;
+
 var data = [
     {
         "line1": "400 OFF",
@@ -60,9 +62,9 @@ var data = [
         "imagehelp": "https://raw.githubusercontent.com/shrey714/helping-hands/2a69cdd73223fd1b0b2d604bee60c01429a4e9cb/public/images/helping%20hand.svg"
     }
 ]
-let boxnumber = document.getElementById("boxnumber").value;
+// let boxnumber = document.getElementById("boxnumber").value;
 let rewards=document.querySelector(".rewards");
-for (let i = 0; i < boxnumber; i++) {
+for (let i = 0; i < a; i++) {
     rewards.innerHTML += `        
     <div class="rewardbox">
     <span class="rewardamount">${data[i].line1}</span>
@@ -71,3 +73,4 @@ for (let i = 0; i < boxnumber; i++) {
     </div>
 `;
 }
+

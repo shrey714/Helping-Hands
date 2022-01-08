@@ -48,18 +48,25 @@ app.get("/features/:id",(req,res)=>{
 
 //rewards
 app.get("/reward/:id",(req,res)=>{
-    res.render("reward",{
-        userid:req.params.id
-    });
+    Accepted.find({"acceptedby":`${req.params.id}`},function(err,users2){
+        if(err){
+            console.warn(err);
+        }else{
+            res.render("reward",{
+                totalboxes:users2,
+                userid:req.params.id,
+            });
+        }
+    })
 })
 
 
 
 app.get("/doc2/:id",(req,res)=>{
-    User.find({}, function(err,users1){
+    User.find({"status":"pending"}, function(err,users1){
         if(err) {console.warn(err);
         }else{
-            Accepted.find({},function(err,users2){
+            Accepted.find({"acceptedby":`${req.params.id}`},function(err,users2){
                 if(err){
                     console.warn(err);
                 }else{
@@ -135,8 +142,23 @@ app.post("/features/:id", (req,res)=>{
  app.post("/doc2/:id", (req,res)=>{
 
     var userdata = new User(req.body);
+    // console.log(userdata.acceptedby)
+
+    const updateDocument = async (_id)=>{
+        try{
+            const result = await User.updateOne({_id},{
+                $set : {status : "acceped"}
+            });
+        }catch(err){
+            console.log(err);
+        }
+    }
+    updateDocument(userdata.id);
+
      User.findById(userdata.id).then(doc =>  {
-          doc.remove();
+        //   doc.remove();
+          doc.acceptedby = userdata.acceptedby;
+          doc.status="accepted";
          var acceptedmessage = new Accepted(doc);
         const output = `
         <h3>you have accepted the requiest from ${acceptedmessage.name}</h3>

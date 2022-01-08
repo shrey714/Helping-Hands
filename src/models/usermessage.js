@@ -33,6 +33,10 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true,
         minLength: 5
+    },
+    acceptedby: {
+        type: String,
+        default:"email"
     }
 })
 

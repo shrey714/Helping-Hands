@@ -18,7 +18,7 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/utilities.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Helping Hand</title>
+    <title>Rewards</title>
 </head>
 
 <body>
@@ -95,7 +95,7 @@
     <section class="features-head bg-primary py-3">
         <div class="container grid">
             <div>
-                <h1 class="xl">Rewards</h1>
+                <h1 class="xl">Rewards </h1>
             </div>
             <img src="/images/helping hand.svg" alt="">
         </div>
@@ -116,10 +116,13 @@
 
 
 {{!-- =================================================================== --}}
-    <input type="number" id="boxnumber" style="display: none;" value="5"/>
+    {{!-- <input type="number" id="boxnumber" style="display: none;" value="5"/> --}}
     <section class="rewards">
-
     </section>
+       {{#each totalboxes}}
+    <form class="boxesnumber">
+    </form>
+    {{/each}}
 {{!-- =================================================================== --}}
 
     <!-- Footer -->
