@@ -3,7 +3,6 @@ const path=require("path")
 require("./db/conn");
 const User=require("./models/usermessage")
 const Accepted=require("./models/acceptedmessage")
-const Reward=require("./models/rewardsdata")
 const app=express();
 const hbs =require("hbs");
 const nodemailer = require('nodemailer');

@@ -11,6 +11,7 @@ if (document.getElementById("myForm") == null) {
 addempty()
 } else {
  console.log('no nothing')
+
 }
 
 
@@ -58,3 +59,4 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+

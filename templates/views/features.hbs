@@ -187,10 +187,10 @@
             </table>
         </form>
     </div>
-
+    <input type="text" class="takeuserid" style="display: none;" value="{{userid}}">
             <div id="page2" class="hello" data-tab-content>
     {{#each userinfo}}
-    <form  id="myForm" class="{{_id}}"">
+    <form method="POST" id="myForm" class="{{_id}} statusform" >
       <div class="hello-item">
         <div class="card">
           <div class="card-content">
@@ -200,7 +200,7 @@
             <h3>Gender : {{gender}}</h3>
             <h3 style="color: red;">Status : {{status}}</h3>
             <h3>Contact Number : {{number}}</h3>
-            <h3 class="card-text"> Required Help : {{helptext}}</h3>            
+            <h3 class="card-text"> Required Help : {{helptext}}</h3> 
           </div>
         </div>
       </div>
