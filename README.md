@@ -27,6 +27,9 @@ or have been separated from their family or relatives for some reason.
 -Authentication has been done using Firebase. Being able to authenticate our users securely, it offers a customized experience to them based on their interests and preferences. We ensure 
 that they have no problems accessing their private data while using our app from multiple devices. The user can sign up or login using the login/signup page and get registered on our 
 website.
+
+![demo](https://user-images.githubusercontent.com/76216765/148667395-3dfb0568-bad0-43e5-aa7e-4aa9c0e299ab.png)
+
 <br>
 
 ***
