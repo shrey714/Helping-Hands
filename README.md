@@ -9,14 +9,23 @@ or have been separated from their family or relatives for some reason.
 <br>
 ***
 > Authentication
+<br>
 > Form submission
+<br>
 > Form history
+<br>
 > Form acceptance
+<br>
 > Accepted form history
+<br>
 > Form status
+<br>
 > Dark mode
+<br>
 > Responsive
+<br>
 > Chat application
+<br>
 > Rewards
 ***
 <br>
