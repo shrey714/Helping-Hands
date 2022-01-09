@@ -1,4 +1,4 @@
-#**HELPING-HAND**
+```#**HELPING-HAND**
 PROJECT IS DEPLOYED ON HEROKU_APP =>
 https://helping-hands-new.herokuapp.com/
 
@@ -45,3 +45,4 @@ to chatting with others, sharing one felling, socializing etc.
 -The website can also be viewed in the dark mode. The button on the top right corner of the website lets the user toggle between dark mode and light mode. Dark mode is intended to reduce blue light exposure and help with eye strain that comes with prolonged screen time.
 #Responsive:
 -The website is responsive as well. The website can adapt itself to the screen size available and is therefore suitable for displaying on all sizes and resolutions of the screen.
+```
