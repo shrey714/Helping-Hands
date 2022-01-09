@@ -42,7 +42,9 @@ can be retrieved later for further use. A mail is sent to the concerned user tha
 #  Accepted form history:
 -In the volunteer sections people whose requests have been accepted by the volunteer are displayed. This section will help in keeping a track of the requests accepted by the volunteer for 
 help.
+
 ***
+
 <br>
 #  Form status:
 -Form status is displayed in the history section itself inside each information card containing basic info. Whether the form was accepted or rejected is displayed on the card in the red 
