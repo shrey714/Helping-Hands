@@ -1,7 +1,7 @@
 #  **HELPING-HAND**
 <br>
 PROJECT IS DEPLOYED ON HEROKU_APP =>
-https://helping-hands-new.herokuapp.com/
+https://vxok6p.deta.dev/
 
 <br>
 <br>
